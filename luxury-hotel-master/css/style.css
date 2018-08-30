@@ -184,7 +184,7 @@ header .navbar.navbar-light .nav-link.active {
   font-size: 60px;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1199.98px) {
   .site-hero.overlay h1 {
     font-size: 40px;
   }
@@ -194,7 +194,7 @@ header .navbar.navbar-light .nav-link.active {
   font-size: 30px;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1199.98px) {
   .site-hero.overlay p {
     font-size: 20px;
   }
