@@ -19,11 +19,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- This is our Style -->
     <link rel="stylesheet" href="css/our_style.css">
-    <!-- Mews Distributor -->
-<script>(function(m,e,w,s){c=m.createElement(e);c.onload=function(){
-Mews.D.apply(null,s)};c.async=1;c.src=w;t=m.getElementsByTagName(e)[0];t.parentNode.insertBefore(c,t);})
-(document,'script','https://www.mews.li/distributor/distributor.min.js',[['2706853b-8087-49e8-8a13-1ee51bf18fd5']]);</script>
-<!-- End Mews Distributor -->
+
   </head>
   <body>
 
@@ -54,7 +50,7 @@ Mews.D.apply(null,s)};c.async=1;c.src=w;t=m.getElementsByTagName(e)[0];t.parentN
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
                <li class="nav-item cta">
-                <a class="nav-link" href="booknow.html"><span>Book Now</span></a>
+                <a class="nav-link distributor" href=""><span>Book Now</span></a>
               </li>
             </ul>
 
@@ -72,7 +68,7 @@ Mews.D.apply(null,s)};c.async=1;c.src=w;t=m.getElementsByTagName(e)[0];t.parentN
             <div class="mb-5 element-animate">
               <h1>Welcome</h1>
               <p>Discover Basel's #1 Business Hotel.</p>
-              <p><a href="booknow.html" class="btn btn-primary">Book Now</a></p>
+              <p><a href="" class="btn btn-primary distributor">Book Now</a></p>
             </div>
 
           </div>
@@ -131,7 +127,7 @@ Mews.D.apply(null,s)};c.async=1;c.src=w;t=m.getElementsByTagName(e)[0];t.parentN
                   <li><span class="ion-ios-crop"></span> 35 sqm<sup>2</sup></li>
                 </ul>
                 <p>Our Gorgeous Double rooms are spacious and refined. Some of these rooms have two stories or even two bathrooms. They are great for longer stays. These rooms can be fitted with a King size bed or a Twin double bed and come with a shower or bathtub. </p>
-                <p><a href="#" class="btn btn-primary btn-sm">Book Now From 269.- CHF</a></p>
+                <p><a href="#" class="btn btn-primary btn-sm distributor">Book Now From 269.- CHF</a></p>
               </div>
             </div>
           </div>
@@ -146,7 +142,7 @@ Mews.D.apply(null,s)};c.async=1;c.src=w;t=m.getElementsByTagName(e)[0];t.parentN
                     <span class="ion-ios-star"></span>
                     <span class="ion-ios-star"></span>
                   </span>
-                  <span class="pricing-from">
+                  <span class="pricing-from distributor">
                     from 219.- CHF
                   </span>
                 </div>
@@ -164,7 +160,7 @@ Mews.D.apply(null,s)};c.async=1;c.src=w;t=m.getElementsByTagName(e)[0];t.parentN
                     <span class="ion-ios-star"></span>
                     <span class="ion-ios-star"></span>
                   </span>
-                  <span class="pricing-from">
+                  <span class="pricing-from distributor">
                     from 369.- CHF
                   </span>
                 </div>
@@ -240,5 +236,20 @@ Mews.D.apply(null,s)};c.async=1;c.src=w;t=m.getElementsByTagName(e)[0];t.parentN
     <script src="js/magnific-popup-options.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="https://www.mews.li/distributor/distributor.min.js"></script>
+    <script>
+Mews.Distributor({
+    configurationIds: [
+        '2706853b-8087-49e8-8a13-1ee51bf18fd5'
+    ],
+    openElements: '.distributor'
+} ,
+function (distributor) {
+    // you can call API functions on a distributor instance here
+    // set different start and end date
+    distributor.setCurrencyCode('CHF');
+
+});
+</script>
   </body>
 </html>

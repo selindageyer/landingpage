@@ -17,11 +17,7 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Mews Distributor -->
-<script>(function(m,e,w,s){c=m.createElement(e);c.onload=function(){
-Mews.D.apply(null,s)};c.async=1;c.src=w;t=m.getElementsByTagName(e)[0];t.parentNode.insertBefore(c,t);})
-(document,'script','https://www.mews.li/distributor/distributor.min.js',[['2706853b-8087-49e8-8a13-1ee51bf18fd5']]);</script>
-<!-- End Mews Distributor -->
+
   </head>
   <body>
 
@@ -53,7 +49,7 @@ Mews.D.apply(null,s)};c.async=1;c.src=w;t=m.getElementsByTagName(e)[0];t.parentN
               </li>
 
                <li class="nav-item cta">
-                <a class="nav-link" href="booknow.html"><span>Book Now</span></a>
+                <a class="nav-link distributor" href=""><span>Book Now</span></a>
               </li>
             </ul>
 
@@ -194,5 +190,20 @@ public car park with over 400 lots. The Basel Airport is about 15 min. and Zuric
     <script src="js/magnific-popup-options.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="https://www.mews.li/distributor/distributor.min.js"></script>
+    <script>
+Mews.Distributor({
+    configurationIds: [
+        '2706853b-8087-49e8-8a13-1ee51bf18fd5'
+    ],
+    openElements: '.distributor'
+} ,
+function (distributor) {
+    // you can call API functions on a distributor instance here
+    // set different start and end date
+    distributor.setCurrencyCode('CHF');
+
+});
+</script>
   </body>
 </html>
