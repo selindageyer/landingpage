@@ -19,7 +19,8 @@ $(document).ready(function() {
 				// By defailt it looks for an image tag:
 				opener: function(openerElement) {
 				// openerElement is the element on which popup was initialized, in this case its <a> tag
-				// you don't need to add "opener" option if this code matches your needs, it's defailt one.
+				// you don't need to add "opener" option if this code matches your needs, it's default one.
+				// return openerElement.is('iframe') ? openerElement : openerElement.find('iframe');
 				return openerElement.is('img') ? openerElement : openerElement.find('img');
 				}
 			}
@@ -33,15 +34,12 @@ $(document).ready(function() {
         mainClass: 'mfp-fade',
         removalDelay: 160,
         preloader: false,
-
+				X-Frame-Options: ALLOW-FROM "https://youtu.be/tuD4JdlpHII",
         fixedContentPos: false
     });
 	};
 
-	
-
-
-	// Call the functions 
+	// Call the functions
 	magnifPopup();
 	magnifVideo();
 
