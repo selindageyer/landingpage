@@ -18,7 +18,7 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://www.mews.li/distributor/distributor.min.js"></script>
+
   </head>
   <body>
 
@@ -53,7 +53,7 @@
               </li>
 
                <li class="nav-item cta">
-                <a class="nav-link" href="booknow.html"><span>Book Now</span></a>
+                <a class="nav-link distributor" href=""><span>Book Now</span></a>
               </li>
             </ul>
 
@@ -256,5 +256,20 @@
 
 
     <script src="js/main.js"></script>
+    <script src="https://www.mews.li/distributor/distributor.min.js"></script>
+    <script>
+Mews.Distributor({
+    configurationIds: [
+        '2706853b-8087-49e8-8a13-1ee51bf18fd5'
+    ],
+    openElements: '.distributor'
+} ,
+function (distributor) {
+    // you can call API functions on a distributor instance here
+    // set different start and end date
+    distributor.setCurrencyCode('CHF');
+    
+});
+</script>
   </body>
 </html>
